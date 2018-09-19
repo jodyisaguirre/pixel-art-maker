@@ -1,6 +1,4 @@
-body {
-    background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/03/62/30/9157aa94e693d90.jpg");
-}
+
 .container{
   display: flex;
   justify-content: center;
@@ -8,7 +6,7 @@ body {
 .pixel{
   height: 30px;
   width: 30px;
-  border: white 1px solid;
+  border: black 1px solid;
   border-radius: 50%;
 }
 
@@ -41,6 +39,6 @@ body {
 .city {
   height: 30px;
   width: 30px;
-  border: 1px solid white;
+  border: 1px solid black;
   opacity: 20%;
 }
