@@ -1,18 +1,19 @@
-let container =document.querySelector(".container")
+let container =document.querySelector(".container");
 let chosenColor = "";
+
 
 function handleClick(event){
   event.target.style.backgroundColor = chosenColor;
 }
-container.addEventListener("click", handleClick);
+container.addEventListener("mousedown", handleClick);
 
-let colors = document.querySelector(".colors")
+let colors = document.querySelector(".colors");
 
 function handleColorSelection(event){
-  console.log(event.target)
+
   chosenColor = event.target.classList[1];
 }
-colors.addEventListener("click", handleColorSelection)
+colors.addEventListener("click", handleColorSelection);
 
 var table = document.createElement('table');
 var tblB = document.createElement('tbody');
@@ -24,8 +25,8 @@ for(var i=0; i<10; i++){
   tblB.appendChild(tr);
 
   for (var j = 0; j< 20; j++){
-    var td = document.createElement('td')
+    var td = document.createElement('td');
     tr.appendChild(td);
-    td.className = "city"
+    td.className = "city";
   }
 }
